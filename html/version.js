@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
           var current_version = urlParts[4];
             // TODO: 如下的取代页需要按需进行配置
           var new_url = url.replace(window.location.hostname + '/test_doxygen/' + current_version,
-              window.location.hostname +'test_proxy' + path)
+              window.location.hostname +'/test_proxy' + path)
 
           if (url == new_url) {
               var current_version = /\/[^\/]+/.exec(location.pathname)
