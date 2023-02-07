@@ -1,0 +1,458 @@
+<!-- HTML header for doxygen 1.9.5-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROJECT_NAME-项目名称: test_doxygen: 说明</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+     <script type="text/javascript" src="../version.js"></script>
+  <td id="projectalign">
+   <div id="projectname">PROJECT_NAME-项目名称: test_doxygen
+        <span id="projectnumber">1.1.0</span>
+   </div>
+   <div id="projectbrief">&#39;PROJECT_BRIEF-项目简介: 用来进行测试doxygen配置生成规则&#39;</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part --><!-- 制作者 Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_docs_doxygen_xE4_xBD_xBF_xE7_x94_xA8_xE6_x95_x99_xE7_xA8_x8B.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">说明 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><ul>
+<li>支持多种语言，公司内部主要是c++和python</li>
+<li>支持读取类中的注释，并按照规则形成文档</li>
+<li>支持读取markdown，所有文档会在相关页面（related pages）展示</li>
+<li>支持指定readme.md为首页</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md38"></a>
+安装</h1>
+<h2><a class="anchor" id="autotoc_md39"></a>
+安装doxygen</h2>
+<blockquote class="doxtable">
+<p >&zwj;这里以命令行为例，也有相关GUI程序 </p>
+</blockquote>
+<ul>
+<li>mac</li>
+</ul>
+<div class="fragment"><div class="line">brew install doxygen</div>
+</div><!-- fragment --><ul>
+<li>windows</li>
+</ul>
+<blockquote class="doxtable">
+<p >&zwj;下载后安装即可: <a href="https://github.com/doxygen/doxygen/releases">https://github.com/doxygen/doxygen/releases</a> </p>
+</blockquote>
+<ul>
+<li>linux</li>
+</ul>
+<div class="fragment"><div class="line">sudo apt-get install doxygen</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md40"></a>
+配置plantuml</h2>
+<blockquote class="doxtable">
+<p >&zwj;如需配置UML来画图，则需要配置plantuml </p>
+</blockquote>
+<h3><a class="anchor" id="autotoc_md41"></a>
+配置Java环境</h3>
+<blockquote class="doxtable">
+<p >&zwj;java 环境配置windows上主要是环境变量的配置，可以参考<a href="https://www.runoob.com/java/java-environment-setup.html">https://www.runoob.com/java/java-environment-setup.html</a>,mac和Linux直接用brew和apt等等工具配置就行了！ </p>
+</blockquote>
+<h3><a class="anchor" id="autotoc_md42"></a>
+配置graphvize【可选】</h3>
+<blockquote class="doxtable">
+<p >&zwj;可选的, 但是建议安装 (如果想绘制除 时序图和活动图以外的图, 就需要安装 Graphviz 软件)。 </p>
+</blockquote>
+<ul>
+<li>ubuntu <div class="fragment"><div class="line">sudo apt install graphviz</div>
+</div><!-- fragment --></li>
+<li>windows</li>
+</ul>
+<blockquote class="doxtable">
+<p >&zwj;下载安装: <a href="https://www.graphviz.org/download/">https://www.graphviz.org/download/</a> </p>
+</blockquote>
+<ul>
+<li>mac <div class="fragment"><div class="line">brew install graphviz</div>
+</div><!-- fragment --></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md43"></a>
+配置plantuml</h3>
+<ul>
+<li>下载jar包: <a href="http://sourceforge.net/projects/plantuml/files/plantuml.jar/download">http://sourceforge.net/projects/plantuml/files/plantuml.jar/download</a></li>
+</ul>
+<blockquote class="doxtable">
+<p >&zwj;后续doxygen的配置需要配置这个jar文件路径 </p>
+</blockquote>
+<h2><a class="anchor" id="autotoc_md44"></a>
+&lt;/blockquote&gt;</h2>
+<h1><a class="anchor" id="autotoc_md45"></a>
+配置项目中的Doxygen</h1>
+<p >先说一下大体目录结构情况</p>
+<div class="fragment"><div class="line">|--html                : 文档生成的存储地方</div>
+<div class="line">|  |--1.0              : 不同版本以文件夹进行【doxygen自动生成】</div>
+<div class="line">|     |--index.html</div>
+<div class="line">|     |-- ....</div>
+<div class="line">|  |--2.0</div>
+<div class="line">|     |--index.html</div>
+<div class="line">|     |-- ....</div>
+<div class="line">|  |--version.js       : 用于跳转版本的js   【链接替换路径和版本号按需修改】</div>
+<div class="line">|  |--index.html       : 首页显示所有的版本号【需要手动添加】</div>
+<div class="line">|</div>
+<div class="line">|--Doxyfile            : doxygen配置文件【第一次配置较多，后续按需修改】</div>
+<div class="line">|--header.html         : 自定义header【和版本号挂钩】</div>
+<div class="line">|--footer.html         : 自定义footer【不动】</div>
+<div class="line">|--customdoxygen.css   : 自定义css【不动】</div>
+</div><!-- fragment --><ul>
+<li>进入项目路径</li>
+<li>生成配置文件，最终会生成一个<code>Doxyfile</code></li>
+</ul>
+<blockquote class="doxtable">
+<p >&zwj;一个项目初次配置后续则不用运行这一步骤了。 </p>
+</blockquote>
+<div class="fragment"><div class="line">doxygen -g  </div>
+</div><!-- fragment --><ul>
+<li>生成自定义的header,footer和自定义css文件【版本控制的核心所在地】</li>
+</ul>
+<blockquote class="doxtable">
+<p >&zwj;这里主要是要修改header.html，用于版本控制，同一个项目第一次配置后续则不用运行这一步了。 </p>
+</blockquote>
+<div class="fragment"><div class="line">doxygen -w html header.html footer.html customdoxygen.css</div>
+</div><!-- fragment --><p >header.html 修改后的东西如下所示【**可以直接使用**】，与原有生成的不同是<code>&lt;span id="projectnumber"&gt;$projectnumber&lt;/span&gt;</code>是有字符串的，version.js是无法读取到正常的版本号，同时引入了<code>&lt;script type="text/javascript" src="../version.js"&gt;&lt;/script&gt;</code>用于生成一个可选择版本号的select下拉框。</p>
+<div class="fragment"><div class="line">&lt;!-- HTML header for doxygen 1.9.5--&gt;  </div>
+<div class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;  </div>
+<div class="line">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;$langISO&quot;&gt;  </div>
+<div class="line">&lt;head&gt;  </div>
+<div class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/xhtml;charset=UTF-8&quot;/&gt;  </div>
+<div class="line">&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=11&quot;/&gt;  </div>
+<div class="line">&lt;meta name=&quot;generator&quot; content=&quot;Doxygen $doxygenversion&quot;/&gt;  </div>
+<div class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&gt;  </div>
+<div class="line">&lt;!--BEGIN PROJECT_NAME--&gt;&lt;title&gt;$projectname: $title&lt;/title&gt;&lt;!--END PROJECT_NAME--&gt;  </div>
+<div class="line">&lt;!--BEGIN !PROJECT_NAME--&gt;&lt;title&gt;$title&lt;/title&gt;&lt;!--END !PROJECT_NAME--&gt;  </div>
+<div class="line">&lt;link href=&quot;$relpath^tabs.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;  </div>
+<div class="line">&lt;!--BEGIN DISABLE_INDEX--&gt;  </div>
+<div class="line">  &lt;!--BEGIN FULL_SIDEBAR--&gt;&lt;script type=&quot;text/javascript&quot;&gt;var page_layout=1;&lt;/script&gt;  </div>
+<div class="line">  &lt;!--END FULL_SIDEBAR--&gt;  </div>
+<div class="line">&lt;!--END DISABLE_INDEX--&gt;  </div>
+<div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;$relpath^jquery.js&quot;&gt;&lt;/script&gt;  </div>
+<div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;$relpath^dynsections.js&quot;&gt;&lt;/script&gt;  </div>
+<div class="line">$treeview  </div>
+<div class="line">$search  </div>
+<div class="line">$mathjax  </div>
+<div class="line">$darkmode  </div>
+<div class="line">&lt;link href=&quot;$relpath^$stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;  </div>
+<div class="line">$extrastylesheet  </div>
+<div class="line">&lt;/head&gt;  </div>
+<div class="line">&lt;body&gt;  </div>
+<div class="line">&lt;!--BEGIN DISABLE_INDEX--&gt;  </div>
+<div class="line">  &lt;!--BEGIN FULL_SIDEBAR--&gt;&lt;div id=&quot;side-nav&quot; class=&quot;ui-resizable side-nav-resizable&quot;&gt;&lt;!-- do not remove this div, it is closed by doxygen! --&gt;  </div>
+<div class="line">  &lt;!--END FULL_SIDEBAR--&gt;&lt;!--END DISABLE_INDEX--&gt;  </div>
+<div class="line">  </div>
+<div class="line">&lt;div id=&quot;top&quot;&gt;&lt;!-- do not remove this div, it is closed by doxygen! --&gt;  </div>
+<div class="line">  </div>
+<div class="line">&lt;!--BEGIN TITLEAREA--&gt;  </div>
+<div class="line">&lt;div id=&quot;titlearea&quot;&gt;  </div>
+<div class="line">&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;  </div>
+<div class="line"> &lt;tbody&gt; &lt;tr id=&quot;projectrow&quot;&gt;  </div>
+<div class="line">  &lt;!--BEGIN PROJECT_LOGO--&gt;  </div>
+<div class="line">  &lt;td id=&quot;projectlogo&quot;&gt;&lt;img alt=&quot;Logo&quot; src=&quot;$relpath^$projectlogo&quot;/&gt;&lt;/td&gt;  </div>
+<div class="line">  &lt;!--END PROJECT_LOGO--&gt;  </div>
+<div class="line">     &lt;script type=&quot;text/javascript&quot; src=&quot;../version.js&quot;&gt;&lt;/script&gt;  </div>
+<div class="line">  &lt;!--BEGIN PROJECT_NAME--&gt;  </div>
+<div class="line">  &lt;td id=&quot;projectalign&quot;&gt;  </div>
+<div class="line">   &lt;div id=&quot;projectname&quot;&gt;$projectname&lt;!--BEGIN PROJECT_NUMBER--&gt;  </div>
+<div class="line">        &lt;span id=&quot;projectnumber&quot;&gt;$projectnumber&lt;/span&gt;  </div>
+<div class="line">   &lt;/div&gt;   &lt;!--BEGIN PROJECT_BRIEF--&gt;&lt;div id=&quot;projectbrief&quot;&gt;$projectbrief&lt;/div&gt;&lt;!--END PROJECT_BRIEF--&gt;  </div>
+<div class="line">  &lt;/td&gt;  </div>
+<div class="line">  &lt;!--END PROJECT_NAME--&gt;  </div>
+<div class="line">  &lt;!--BEGIN !PROJECT_NAME--&gt;   &lt;!--BEGIN PROJECT_BRIEF--&gt;    &lt;td&gt;  </div>
+<div class="line">    &lt;div id=&quot;projectbrief&quot;&gt;$projectbrief&lt;/div&gt;  </div>
+<div class="line">    &lt;/td&gt;   &lt;!--END PROJECT_BRIEF--&gt;  </div>
+<div class="line">  &lt;!--END !PROJECT_NAME--&gt;  &lt;!--BEGIN DISABLE_INDEX--&gt;   &lt;!--BEGIN SEARCHENGINE--&gt;     &lt;!--BEGIN !FULL_SIDEBAR--&gt;    &lt;td&gt;$searchbox&lt;/td&gt;  </div>
+<div class="line">     &lt;!--END !FULL_SIDEBAR--&gt;  </div>
+<div class="line">   &lt;!--END SEARCHENGINE--&gt;  &lt;!--END DISABLE_INDEX--&gt; &lt;/tr&gt;  </div>
+<div class="line">  &lt;!--BEGIN SEARCHENGINE--&gt;  </div>
+<div class="line">   &lt;!--BEGIN FULL_SIDEBAR--&gt;   &lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt;$searchbox&lt;/td&gt;&lt;/tr&gt;  </div>
+<div class="line">   &lt;!--END FULL_SIDEBAR--&gt;  </div>
+<div class="line">  &lt;!--END SEARCHENGINE--&gt; &lt;/tbody&gt;  </div>
+<div class="line">&lt;/table&gt;  </div>
+<div class="line">&lt;/div&gt;  </div>
+<div class="line">&lt;!--END TITLEAREA--&gt;  </div>
+<div class="line">&lt;!-- end header part --&gt;</div>
+</div><!-- fragment --><p >版本控制的<code>version.js</code>【需要按需修改部分配置】如下所示，主要是要注意按实际部署环境<code>修改链接替换中的 current_version 和new url路径</code>，同时需要配置<code>版本号 versions</code>去对应(最新的版本号在上面，低版本号在下面 和文件夹对应即可)。</p>
+<div class="fragment"><div class="line">document.addEventListener(&quot;DOMContentLoaded&quot;, function() {  </div>
+<div class="line">  var versions = [  </div>
+<div class="line">      [&#39;2.0&#39;, &#39;/2.0&#39;],  </div>
+<div class="line">      [&#39;1.0&#39;, &#39;/1.0&#39;]  </div>
+<div class="line">  ];  </div>
+<div class="line">  var current_ver = $(&quot;#projectnumber&quot;)[0].innerText || versions[0][0];  </div>
+<div class="line">  var h = &#39;&lt;select&gt;&#39;;  </div>
+<div class="line">  for (i = 0; i &lt; versions.length; i++) {  </div>
+<div class="line">      selected = &#39;&#39;  </div>
+<div class="line">      if(current_ver === versions[i][0])  </div>
+<div class="line">          selected = &#39; selected=&quot;selected&quot;&#39;;  </div>
+<div class="line">      h += &#39;&lt;option value=&quot;&#39; + versions[i][0] + &#39;&quot;&#39; + selected + &#39;&gt;&#39; + versions[i][0] + &#39;&lt;/option&gt;&#39;;  </div>
+<div class="line">  }  </div>
+<div class="line">  h += &#39;&lt;/select&gt;&#39;;  </div>
+<div class="line">  </div>
+<div class="line">  $(&quot;#projectnumber&quot;)[0].innerHTML = h;  </div>
+<div class="line">  </div>
+<div class="line">  $(&quot;#projectnumber select&quot;)[0].addEventListener(&#39;change&#39;, function() {  </div>
+<div class="line">      var v = $(this).children(&#39;option:selected&#39;).attr(&#39;value&#39;);  </div>
+<div class="line">      var path = undefined;  </div>
+<div class="line">      for (i = 0; i &lt; versions.length; i++) {  </div>
+<div class="line">          if(v === versions[i][0]) {  </div>
+<div class="line">              path = versions[i][1];  </div>
+<div class="line">              break;          }  </div>
+<div class="line">      }  </div>
+<div class="line">  </div>
+<div class="line">      if (path) {  </div>
+<div class="line">          var location = window.location;  </div>
+<div class="line">          var url = location.href;  </div>
+<div class="line">          var urlParts = url.split(&quot;/&quot;);  </div>
+<div class="line">          // get version  </div>
+<div class="line">          // TODO: 具体情况需要按照url进行修改,目前测试是按照如下如来进行配置的  </div>
+<div class="line">          // http://localhost:63342/rs-bg/html/4.6.0/index.html  </div>
+<div class="line">          var current_version = urlParts[5];  </div>
+<div class="line">          // TODO: 如下的取代页需要按需进行配置  </div>
+<div class="line">          var new_url = url.replace(window.location.hostname + &#39;:63342/UltraMCI/html/&#39; + current_version,  </div>
+<div class="line">                                    window.location.hostname +&#39;:63342/UltraMCI/html&#39; + path); </div>
+<div class="line">          if (url == new_url) {  </div>
+<div class="line">              var current_version = /\/[^\/]+/.exec(location.pathname)  </div>
+<div class="line">              new_url = url.replace(window.location.hostname + current_version,  </div>
+<div class="line">                                    window.location.hostname + path);  </div>
+<div class="line">          }  </div>
+<div class="line">          if (url != new_url)  </div>
+<div class="line">              window.location.href = new_url; // navigate  </div>
+<div class="line">      }  </div>
+<div class="line">  });  </div>
+<div class="line">});</div>
+</div><!-- fragment --><p >index.html【文档首页】用来选择版本号【注意其中的版本号修改】，这个只需要记得去配置跳转路径【可用js去自动跳转/也可类似菜单点击进入版本】就行了，极简版本如下所示。</p>
+<div class="fragment"><div class="line">&lt;!DOCTYPE html&gt;  </div>
+<div class="line">&lt;html lang=&quot;en&quot;&gt;  </div>
+<div class="line">&lt;head&gt;  </div>
+<div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;  </div>
+<div class="line">    &lt;title&gt;rs-bg Documention&lt;/title&gt;  </div>
+<div class="line">    &lt;script&gt;window.location.href=&#39;4.7.0&#39;;&lt;/script&gt;  </div>
+<div class="line">&lt;/head&gt;  </div>
+<div class="line">&lt;body&gt;  </div>
+<div class="line">&lt;!--  </div>
+<div class="line">    &lt;div&gt;        </div>
+<div class="line">        &lt;p align=&quot;center&quot;&gt;           </div>
+<div class="line">            &lt;ul&gt;                </div>
+<div class="line">                 &lt;li&gt;&lt;a href=&quot;4.4.0/index.html&quot;&gt;4.4.0&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line">                 &lt;li&gt;&lt;a href=&quot;4.5.0/index.html&quot;&gt;4.5.0&lt;/a&gt;&lt;/li&gt;                </div>
+<div class="line">                 &lt;li&gt;&lt;a href=&quot;4.6.0/index.html&quot;&gt;4.6.0&lt;/a&gt;&lt;/li&gt;</div>
+<div class="line">                 &lt;li&gt;&lt;a href=&quot;4.7.0/index.html&quot;&gt;4.7.0&lt;/a&gt;&lt;/li&gt;            </div>
+<div class="line">            &lt;/ul&gt;        </div>
+<div class="line">        &lt;/p&gt;    </div>
+<div class="line">    &lt;/div&gt; </div>
+<div class="line">--&gt;</div>
+<div class="line">&lt;/body&gt;  </div>
+<div class="line">&lt;/html&gt;</div>
+</div><!-- fragment --><ul>
+<li>常见配置修改</li>
+</ul>
+<blockquote class="doxtable">
+<p >&zwj;大部分配置是第一个次配置好后就行了，后续只需要修改<code>PROJECT_NUMBER</code>和<code>HTML_OUTPUT</code>来更新版本即可【不同开发者需要配置一下自己的plantum路径】。同时应该注意所有版本除了这两个版本之间的配置应该保持一致，否则版本跳转时会出现因配置不同导致无法找到文件出现404的情况影响用户体验。 </p>
+</blockquote>
+<p>![[Pasted image 20230207103416.png]]</p>
+<div class="fragment"><div class="line"><span class="preprocessor"># 项目名称</span></div>
+<div class="line">PROJECT_NAME           = <span class="stringliteral">&quot;rs-bg&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 项目文档编号</span></div>
+<div class="line"><span class="preprocessor"># 这个应该和HTML_OUTPUT保持一致</span></div>
+<div class="line"><span class="preprocessor"># 这个和version.js等等版本控制息息相关</span></div>
+<div class="line"><span class="preprocessor"># header有个#projectnumber 会被这个进行替换</span></div>
+<div class="line"><span class="preprocessor"># 而版本管理跳转也需要读取这个值进行判断</span></div>
+<div class="line">PROJECT_NUMBER         = 1.0</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 项目简介</span></div>
+<div class="line">PROJECT_BRIEF          = <span class="stringliteral">&#39;test PROJECT_BRIEF &#39;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 输出文档语言</span></div>
+<div class="line"><span class="preprocessor"># 默认为英文</span></div>
+<div class="line"><span class="preprocessor"># 这里说的是原有的菜单等等，不是翻译文档转换成多国语言</span></div>
+<div class="line">OUTPUT_LANGUAGE        = Chinese</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 指定路径</span></div>
+<div class="line"><span class="preprocessor"># 特别是Python项目</span></div>
+<div class="line"><span class="preprocessor"># 最好一定要指定路径</span></div>
+<div class="line"><span class="preprocessor"># 否则可能读取到像cpp的include以及python 的venv这种不必要的路径</span></div>
+<div class="line"><span class="preprocessor"># 一般指定到README.md 相对路径即可</span></div>
+<div class="line">INPUT                  = </div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 指定要用作主页的markdown页</span></div>
+<div class="line"><span class="preprocessor"># 某个版本的首页内容会展示README的内容</span></div>
+<div class="line">USE_MDFILE_AS_MAINPAGE = README.md</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># html/latex输出路径</span></div>
+<div class="line"><span class="preprocessor"># 建议是版本号</span></div>
+<div class="line"><span class="preprocessor"># 这个会把生成的所有文档放到这个路径中</span></div>
+<div class="line">HTML_OUTPUT            = 1.0</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 输出路径</span></div>
+<div class="line"><span class="preprocessor"># 上面生产的文件会存在html文件中</span></div>
+<div class="line"><span class="preprocessor"># 生成的文件路径为 html/1.0</span></div>
+<div class="line">OUTPUT_DIRECTORY       = html</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor"># 排除路径</span></div>
+<div class="line"><span class="preprocessor"># 注意把项目的依赖路径给去掉</span></div>
+<div class="line"><span class="preprocessor"># 一般cpp的include python的venv路径</span></div>
+<div class="line">EXCLUDE_PATTERNS       = */include/lib_json<span class="comment">/* </span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 是否递归目录</span></div>
+<div class="line"><span class="comment"># 多层级去查询需要生成的文件</span></div>
+<div class="line"><span class="comment">RECURSIVE              = YES </span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 是否生成LATEX</span></div>
+<div class="line"><span class="comment"># laatex主要用于生成PDF文档</span></div>
+<div class="line"><span class="comment">GENERATE_LATEX         = NO</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 禁用Index</span></div>
+<div class="line"><span class="comment">DISABLE_INDEX          = NO</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 左侧树状导航</span></div>
+<div class="line"><span class="comment"># 建议是开启index/关闭左侧树状导航</span></div>
+<div class="line"><span class="comment"># 树状导航对mardown文档层级的显示感觉有点乱</span></div>
+<div class="line"><span class="comment">GENERATE_TREEVIEW      = NO</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 主题修改为白色</span></div>
+<div class="line"><span class="comment">HTML_COLORSTYLE        = LIGHT</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 是否展示文件</span></div>
+<div class="line"><span class="comment">SHOW_FILES             = YES</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 尽可以的从代码中提取信息,既是没有注释的情况</span></div>
+<div class="line"><span class="comment">#【NO时，没有注释的不会提取出来】</span></div>
+<div class="line"><span class="comment">EXTRACT_ALL            = NO</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 类的私有方法也进行提取</span></div>
+<div class="line"><span class="comment">EXTRACT_PRIVATE        = NO</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># plantuml配置路径</span></div>
+<div class="line"><span class="comment"># uml 画图相关</span></div>
+<div class="line"><span class="comment">PLANTUML_JAR_PATH      = /Users/emperinter/app/Python/rs-bg/plantuml.jar</span></div>
+<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment"># 自定义头文件</span></div>
+<div class="line"><span class="comment"># 这个一定要配置</span></div>
+<div class="line"><span class="comment"># 和版本挂钩息息相关</span></div>
+<div class="line"><span class="comment">HTML_HEADER            = header.html</span></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md46"></a>
+如何写注释和markdown文档？</h1>
+<h2><a class="anchor" id="autotoc_md47"></a>
+注释规则｜接口</h2>
+<blockquote class="doxtable">
+<p >&zwj;注释同时支持解析markdow和uml(配置了的话)，如下是c++和python的注释规则和相关图片说明！ </p>
+</blockquote>
+<ul>
+<li>c++</li>
+</ul>
+<div class="fragment"><div class="line">{c++}</div>
+</div><!-- fragment --><ul>
+<li>python</li>
+</ul>
+<div class="fragment"></div><!-- fragment --><h2><a class="anchor" id="autotoc_md48"></a>
+markdown说明文档</h2>
+<blockquote class="doxtable">
+<p >&zwj;项目路径配置INCLUDE下面的以md结尾的文档都会被以【相关页面展示出来】，没有路径关系，建议这类文档统一放在某个文件夹下以供索引生成 </p>
+</blockquote>
+<blockquote class="doxtable">
+<p >&zwj;markdown 索引方式是按照目录层次，然后按照标题级别进行展示的【和文件名称没有关系】 </p>
+</blockquote>
+<div class="fragment"><div class="line">|-- README.md  </div>
+<div class="line">|-- hh.md      -- 示例中内容为 # hh.md文件中的一级标题</div>
+<div class="line">|-- Case</div>
+<div class="line">|   |-- s</div>
+<div class="line">|       |-- s.md</div>
+<div class="line">|       |-- sa.md</div>
+<div class="line">|   |-- index.md</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md49"></a>
+参考</h1>
+<ul>
+<li>[[文档自动化生成流程-原文档]] </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>
