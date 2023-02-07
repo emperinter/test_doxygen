@@ -32,10 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
           // get version
           // TODO: 具体情况需要按照url进行修改,目前测试是按照如下如来进行配置的
           // http://localhost:63342/rs-bg/html/4.6.0/index.html
-          var current_version = urlParts[5];
-          // TODO: 如下的取代页需要按需进行配置
-          var new_url = url.replace(window.location.hostname + ':63343/test_proxy/html/' + current_version,
-                                    window.location.hostname +':63343/test_proxy/html' + path);
+          // var current_version = urlParts[5];
+          // // TODO: 如下的取代页需要按需进行配置
+          // var new_url = url.replace(window.location.hostname + ':63343/test_proxy/html/' + current_version,
+          //                           window.location.hostname +':63343/test_proxy/html' + path);
+
+          // githubpages
+          var current_version = urlParts[4];
+            // TODO: 如下的取代页需要按需进行配置
+          var new_url = url.replace(window.location.hostname + '/test_doxygen/' + current_version,
+              window.location.hostname +'test_proxy' + path)
+
           if (url == new_url) {
               var current_version = /\/[^\/]+/.exec(location.pathname)
               new_url = url.replace(window.location.hostname + current_version,
