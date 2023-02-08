@@ -1,11 +1,20 @@
 """!
-@file test_doxyfile.py
-@brief 用于测试Doxygen生成规则
-@details 细节
+@example
+@details test_doxyfile
 @author emperinter
 @version 1.0
 @date 2023/2/7 11:04
 @copyright MIT
+
+--- markdown
+# test markdown
+```shell
+find / -name *.cpp
+```
+
+@startuml
+Alice -> Bob
+@enduml
 """
 
 class test_doxy_file_python(object):

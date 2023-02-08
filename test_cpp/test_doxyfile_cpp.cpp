@@ -1,11 +1,5 @@
 /**
  * @file test_doxyfile.py
- * @brief 用于测试Doxygen生成规则
- * @details 细节
- * @author emperinter
- * @version 1.0
- * @date 2023/2/7 11:04
- * @copyright MIT
  */
 
 #ifndef AGX_DEMO_TEST_DOXYFILE_H

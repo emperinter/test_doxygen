@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['首页_0',['首页',['../index.html',1,'']]]
+  ['弃用列表_0',['弃用列表',['../deprecated.html',1,'']]]
 ];

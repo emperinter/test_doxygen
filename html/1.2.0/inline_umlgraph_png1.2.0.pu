@@ -1,6 +1,12 @@
 @startuml inline_umlgraph_1.png
-  Alice -> Bob: test
+Alice -> Bob
 @enduml
 @startuml inline_umlgraph_2.png
+Alice -> Bob
+@enduml
+@startuml inline_umlgraph_3.png
+  Alice -> Bob: test
+@enduml
+@startuml inline_umlgraph_4.png
         Alice -> Bob: test
 @enduml

@@ -33,18 +33,18 @@ document.addEventListener("DOMContentLoaded", function() {
           // TODO: 具体情况需要按照url进行修改,目前测试是按照如下如来进行配置的
           // http://localhost:63342/test_docygen/html/4.6.0/index.html
           var current_version = urlParts[5];
-          // TODO: 如下的取代页需要按需进行配置
-          var new_url = url.replace(window.location.hostname + ':63343/test_proxy/html/' + current_version,
-                                    window.location.hostname +':63343/test_proxy/html' + path);
+          // // TODO: 如下的取代页需要按需进行配置
+          // var new_url = url.replace(window.location.hostname + ':63343/test_proxy/html/' + current_version,
+          //                           window.location.hostname +':63343/test_proxy/html' + path);
 
           // githubpages
-          // var current_version = urlParts[4];
+          var current_version = urlParts[4];
           // console.log(current_version);
           // console.log("searchValue:" + window.location.hostname + '/test_doxygen/' + current_version);
           //   console.log("replaceValue:" + window.location.hostname + '/test_doxygen' + path);
           // // TODO: 如下的取代页需要按需进行配置
-          // var new_url = url.replace(window.location.hostname + '/test_doxygen/' + current_version,
-          //     window.location.hostname +'/test_doxygen' + path)
+          var new_url = url.replace(window.location.hostname + '/test_doxygen/' + current_version,
+              window.location.hostname +'/test_doxygen' + path)
 
           if (url == new_url) {
               var current_version = /\/[^\/]+/.exec(location.pathname)
