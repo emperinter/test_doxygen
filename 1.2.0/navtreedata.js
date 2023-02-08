@@ -25,23 +25,22 @@
 var NAVTREE =
 [
   [ "PROJECT_NAME-项目名称: test_doxygen", "index.html", [
-    [ "首页", "index.html", [
-      [ "说明", "index.html#autotoc_md54", null ],
-      [ "安装", "index.html#autotoc_md55", [
-        [ "安装doxygen", "index.html#autotoc_md56", null ],
-        [ "配置plantuml", "index.html#autotoc_md57", [
-          [ "配置Java环境", "index.html#autotoc_md58", null ],
-          [ "配置graphvize【可选】", "index.html#autotoc_md59", null ],
-          [ "配置plantuml", "index.html#autotoc_md60", null ]
+    [ "说明", "index.html", [
+      [ "安装【首次配置】", "index.html#autotoc_md54", [
+        [ "安装doxygen", "index.html#autotoc_md55", null ],
+        [ "配置plantuml", "index.html#autotoc_md56", [
+          [ "配置Java环境", "index.html#autotoc_md57", null ],
+          [ "配置graphvize【可选】", "index.html#autotoc_md58", null ],
+          [ "配置plantuml", "index.html#autotoc_md59", null ]
         ] ],
-        [ "</blockquote>", "index.html#autotoc_md61", null ]
+        [ "</blockquote>", "index.html#autotoc_md60", null ]
       ] ],
-      [ "配置项目中的Doxygen", "index.html#autotoc_md62", null ],
-      [ "如何写注释和markdown文档？", "index.html#autotoc_md63", [
-        [ "注释规则｜接口", "index.html#autotoc_md64", null ],
-        [ "markdown说明文档", "index.html#autotoc_md65", null ]
-      ] ],
-      [ "参考", "index.html#autotoc_md66", null ]
+      [ "配置项目中的Doxygen【项目首次配置即可】", "index.html#autotoc_md61", null ],
+      [ "如何写注释和文档？", "index.html#autotoc_md62", [
+        [ "注释｜接口文档生成", "index.html#autotoc_md63", [
+          [ "代码注释说明", "index.html#autotoc_md64", null ]
+        ] ]
+      ] ]
     ] ],
     [ "doxygen使用教程", "md_docs_doxygen_xE4_xBD_xBF_xE7_x94_xA8_xE6_x95_x99_xE7_xA8_x8B.html", [
       [ "说明", "md_docs_doxygen_xE4_xBD_xBF_xE7_x94_xA8_xE6_x95_x99_xE7_xA8_x8B.html#autotoc_md1", null ],
@@ -108,6 +107,9 @@ var NAVTREE =
       ] ]
     ] ],
     [ "index", "md_docs_index_xE6_xB5_x8B_xE8_xAF_x95.html", null ],
+    [ "Bug 列表", "bug.html", null ],
+    [ "待办事项列表", "todo.html", null ],
+    [ "弃用列表", "deprecated.html", null ],
     [ "类", "annotated.html", [
       [ "类列表", "annotated.html", "annotated_dup" ],
       [ "类索引", "classes.html", null ],
@@ -117,13 +119,17 @@ var NAVTREE =
         [ "函数", "functions_func.html", null ],
         [ "变量", "functions_vars.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "文件", "files.html", [
+      [ "文件列表", "files.html", "files_dup" ]
+    ] ],
+    [ "示例", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_2_users_2emperinter_2app_2_c_2test_doxygen_2_r_e_a_d_m_e_8md-example.html"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';
